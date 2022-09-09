@@ -2,6 +2,7 @@ package day2;
 
 /*
  * This example is about escape sequences
+ * Test Git
  */
 public class ExampleTwo {
    public static void main(String[] args) {
