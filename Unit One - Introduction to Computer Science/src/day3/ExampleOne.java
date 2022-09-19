@@ -1,35 +1,40 @@
 package day3;
 
+/*
+* ExampleOne: Primitive Data Types
+*             Variables
+*/
 public class ExampleOne {
    public static void main(String[] args) {
-      // a variable stores information (maybe an age, a list od student numbers, or
-      // list of accounts)
 
-      // pick variable names that make sense (accounts, age, studentNumbers)
-      // we declare variables using camelCase
+      // Variables are meant to store and eventually recall data/information
 
-      // In Java we must specify the type of data we are going to store
+      // the data could be anything (a number, a String of characters, true or false,
+      // lst of accounts, etc...)
 
-      // Primitive Types - store only the value
-      // int -> represents integer values (+ and -)
-      // double -> represents decimal numbers (+ and -)
-      // boolean -> true and false
+      // before we use a variable we must DECLARE it.
+      // When we declare a variable we must state the type of data it will hold
 
-      int age = 17; // we declared age as an int and assigned the value 17
-      int numberOfStudents, numberOfDesks;
+      // Primitive types store the value (THEY ARE PRIMITIVE)
+      // int -> integer
+      // double -> decimal numbers
+      // boolean -> true or false
 
-      numberOfDesks = 14;
-      numberOfStudents = 12;
+      int numberOfStudents; // numberOfStudents has been declared as an int
+      numberOfStudents = 14; // initialise the variable
+      double testAverage = 63.7; // declared and initialised on the same line (gave it an initial value)
+      final double PI = 3.14; // if the variable CANNOT by modified after it has been initialised then make it
+                              // final.
+      // PI = 6.2; Syntax error (won't compile) because PI is final
+      // naming convention for constants (final) is
+      // ALL_UPPER_CASE_WITH_UNDERSCORES_BETWEEN_WORDS
 
-      System.out.println("The number of desks are: " + numberOfDesks);
-      System.out.println("The number of students are: " + numberOfStudents);
+      boolean isHeads = false;
+      boolean hasToes = true;
 
-      // String concatenation is joining a String with something else
-
-      /*
-       * We joined a String with an int in the code above but it could be anything
-       * like another String.
-       */
+      System.out.println("There are " + numberOfStudents + " students in the class.");
+      System.out.println("5 + 3 = " + 5 + 3); // 5 + 3 = 53
+      System.out.println("5 + 3 = " + (5 + 3)); // 5 + 3 = 8
 
    }
 }
