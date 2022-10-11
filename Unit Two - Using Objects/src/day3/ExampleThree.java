@@ -16,8 +16,12 @@ public class ExampleThree {
                                                          // get 0 -> 9 and add 1 so you get 1 -> 10
 
       /*
-       * Formula for random numbers is Math.random() * numberOfOptions + startingValue
+       * Formula for random numbers is (int)(Math.random() * numberOfOptions) +
+       * startingValue
        */
+
+      int rand = (int) (Math.random() * 201) - 100;
+      // random number from -100 to 100
 
    }
 }

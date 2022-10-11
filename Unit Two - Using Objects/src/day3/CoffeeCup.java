@@ -20,7 +20,7 @@ public class CoffeeCup {
    public CoffeeCup(int size, boolean isFull) {
       sizeInOunces = size;
       if (isFull)
-         sizeInOunces = size;
+         amountLeft = size;
    }
 
    /*
@@ -68,5 +68,9 @@ public class CoffeeCup {
       amountLeft += numOunces;
       if (amountLeft > sizeInOunces)
          amountLeft = sizeInOunces;
+   }
+
+   public int cupSize() {
+      return sizeInOunces;
    }
 }
