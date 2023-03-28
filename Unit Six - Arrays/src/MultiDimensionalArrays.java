@@ -1,10 +1,10 @@
 public class MultiDimensionalArrays {
 
   public static void main(String[] args) {
-    exampleOne();
-    exampleTwo();
-    exampleThree(2, 8);
-    exampleFour();
+    // exampleOne();
+    // exampleTwo();
+    // exampleThree(2, 8);
+    // exampleFour();
     exampleFive(); // can't do it. I tried
 
   }
@@ -13,7 +13,7 @@ public class MultiDimensionalArrays {
     int[][] arr2D = new int[4][];
 
     for (int i = 0; i < arr2D.length; i++) {
-      // arr2D[i] = {1,2,6,9}; // :(
+      // arr2D[i]={1,2,6,9}; // :(
     }
 
     display(arr2D);
@@ -26,7 +26,7 @@ public class MultiDimensionalArrays {
   }
 
   private static void exampleFour() {
-    int[][] arr2D = { { 0, 2, 3, 4 }, { 4, 3, 12, 56, 21 }, { 0, 0, 2, 3, 4, 5, 6, 7, 7, 6 } };
+    int[][] arr2D = { null, null, { 0, 0, 2, 3, 4, 5, 6, 7, 7, 6 } };
 
     display(arr2D);
 
